@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C35970B-95A4-44BE-9C83-6B2D03287523}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VBtry.My.MyApplication</StartupObject>
+    <RootNamespace>VBtry</RootNamespace>
+    <AssemblyName>VBtry</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VBtry.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VBtry.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddItem.Designer.vb">
+      <DependentUpon>AddItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Dash-availableflowers.Designer.vb">
+      <DependentUpon>Dash-availableflowers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash-availableflowers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash-availablegifts.Designer.vb">
+      <DependentUpon>Dash-availablegifts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash-availablegifts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash-lowstock.Designer.vb">
+      <DependentUpon>Dash-lowstock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash-lowstock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash-sales.Designer.vb">
+      <DependentUpon>Dash-sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash-sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash-topselling.Designer.vb">
+      <DependentUpon>Dash-topselling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dash-topselling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard1.Designer.vb">
+      <DependentUpon>Dashboard1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbConnect.vb" />
+    <Compile Include="Items-Addnew.Designer.vb">
+      <DependentUpon>Items-Addnew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Items-Addnew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items-edit.Designer.vb">
+      <DependentUpon>Items-edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Items-edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items-restock.Designer.vb">
+      <DependentUpon>Items-restock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Items-restock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items-View.Designer.vb">
+      <DependentUpon>Items-View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Items-View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items.Designer.vb">
+      <DependentUpon>Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginn.Designer.vb">
+      <DependentUpon>Loginn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loginn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reserve-Sales.Designer.vb">
+      <DependentUpon>Reserve-Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reserve-Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="extra.Designer.vb">
+      <DependentUpon>extra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="extra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveButton.Designer.vb">
+      <DependentUpon>ReserveButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveButton.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveNew.Designer.vb">
+      <DependentUpon>ReserveNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reset.Designer.vb">
+      <DependentUpon>Reset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales-Stockout.Designer.vb">
+      <DependentUpon>Sales-Stockout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales-Stockout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.vb">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sort\Text.vb" />
+    <Compile Include="Supplier-Edit.Designer.vb">
+      <DependentUpon>Supplier-Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier-Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier.Designer.vb">
+      <DependentUpon>Supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction.Designer.vb">
+      <DependentUpon>Transaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddItem.resx">
+      <DependentUpon>AddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash-availableflowers.resx">
+      <DependentUpon>Dash-availableflowers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash-availablegifts.resx">
+      <DependentUpon>Dash-availablegifts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash-lowstock.resx">
+      <DependentUpon>Dash-lowstock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash-sales.resx">
+      <DependentUpon>Dash-sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash-topselling.resx">
+      <DependentUpon>Dash-topselling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard1.resx">
+      <DependentUpon>Dashboard1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items-Addnew.resx">
+      <DependentUpon>Items-Addnew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items-edit.resx">
+      <DependentUpon>Items-edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items-restock.resx">
+      <DependentUpon>Items-restock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items-View.resx">
+      <DependentUpon>Items-View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items.resx">
+      <DependentUpon>Items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginn.resx">
+      <DependentUpon>Loginn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reserve-Sales.resx">
+      <DependentUpon>Reserve-Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="extra.resx">
+      <DependentUpon>extra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveButton.resx">
+      <DependentUpon>ReserveButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveNew.resx">
+      <DependentUpon>ReserveNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reset.resx">
+      <DependentUpon>Reset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales-Stockout.resx">
+      <DependentUpon>Sales-Stockout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier-Edit.resx">
+      <DependentUpon>Supplier-Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier.resx">
+      <DependentUpon>Supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction.resx">
+      <DependentUpon>Transaction.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopcover %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopcoverr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-bag %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reservation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\299109369_471163045018643_9070599325995222754_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flower %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gift-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out-of-stock %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out-of-stock %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
