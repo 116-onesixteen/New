@@ -171,4 +171,25 @@ Module DbConnect
 
     End Sub
 
+    Public con As New MySqlConnection
+    Public cmd As New MySqlCommand
+
+    Sub opencon()
+        con.ConnectionString = "server=localhost;port=3306;username=root;password=;database=savannahsis"
+        con.Open()
+    End Sub
+
+    Public Function strconnection_n() As MySqlConnection
+        Dim MsqlConn As MySqlConnection
+        MsqlConn = New MySqlConnection
+        MsqlConn.ConnectionString = "server=localhost;port=3306;username=root;password=;database=savannahsis"
+        Return MsqlConn
+    End Function
+
+    Public str_conn As MySqlConnection = strconnection_n()
+    Public res As String
+    Public cmdreader As MySqlDataReader
+    Public adapter_n As New MySqlDataAdapter
+    Public table As New DataTable
+
 End Module

@@ -3,7 +3,7 @@
         'Commonet
         Try
 
-            create("INSERT INTO tbl_login(log_name, log_pass) VALUES ('" & usernametxt.Text & "', '" & passwordtxt.Text & "')")
+            'create("INSERT INTO tbl_login(log_name, log_pass) VALUES ('" & usernametxt.Text & "', '" & passwordtxt.Text & "')")
 
         Catch ex As Exception
 

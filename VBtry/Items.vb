@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Data.SqlClient
+Imports MySql.Data.MySqlClient
 
 Public Class Items
 
@@ -32,11 +33,7 @@ Public Class Items
 
     Private Sub comboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles sort.SelectedIndexChanged
 
-
-
-
-
-
+        reload("select * FROM tbl_items WHERE `item_cat` = '" & sort.Text & "'", DataGridView1)
 
     End Sub
 

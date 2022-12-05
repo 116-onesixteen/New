@@ -37,3 +37,42 @@ C:\Users\Normita\Documents\test2022\VBtry\VBtry\obj\Debug\VBtry.Reserve_Sales.re
 C:\Users\Normita\Documents\test2022\VBtry\VBtry\obj\Debug\VBtry.Transaction.resources
 C:\Users\Normita\Documents\test2022\VBtry\VBtry\obj\Debug\VBtry.ReserveNew.resources
 C:\Users\Normita\Documents\test2022\VBtry\VBtry\obj\Debug\VBtry.extra.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\bin\Debug\VBtry.exe.config
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\bin\Debug\VBtry.exe
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\bin\Debug\VBtry.pdb
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\bin\Debug\VBtry.xml
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\bin\Debug\MySql.Data.dll
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\bin\Debug\MySql.Data.xml
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.vbprojAssemblyReference.cache
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.AddItem.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Dash_availableflowers.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Dash_availablegifts.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Dash_lowstock.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Dash_sales.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Dash_topselling.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Dashboard.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Dashboard1.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Items_Addnew.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Items_edit.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Items_restock.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Items_View.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Items.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Login.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Loginn.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Resources.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Reserve_Sales.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.extra.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.ReserveButton.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.ReserveNew.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Reset.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Sales_Stockout.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Sales.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Supplier_Edit.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Supplier.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.Transaction.resources
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.vbproj.GenerateResource.cache
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.vbproj.CoreCompileInputs.cache
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.vbproj.CopyComplete
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.exe
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.xml
+C:\Users\Shane Ivan Fallar\Documents\GitHub\New\VBtry\obj\Debug\VBtry.pdb

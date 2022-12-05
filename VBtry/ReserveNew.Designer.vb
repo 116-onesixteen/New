@@ -27,10 +27,6 @@ Partial Class ReserveNew
         Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.comboBox1 = New System.Windows.Forms.ComboBox()
-        Me.label4 = New System.Windows.Forms.Label()
-        Me.addrsv = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -46,6 +42,11 @@ Partial Class ReserveNew
         Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cdelete = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.comboBox1 = New System.Windows.Forms.ComboBox()
+        Me.label4 = New System.Windows.Forms.Label()
+        Me.addrsv = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -69,9 +70,10 @@ Partial Class ReserveNew
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.DataGridView1)
-        Me.Panel1.Location = New System.Drawing.Point(1, 69)
+        Me.Panel1.Location = New System.Drawing.Point(1, 56)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1000, 507)
+        Me.Panel1.Size = New System.Drawing.Size(750, 412)
         Me.Panel1.TabIndex = 30
         '
         'DataGridView1
@@ -80,61 +82,15 @@ Partial Class ReserveNew
         Me.DataGridView1.ColumnHeadersHeight = 30
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9, Me.Column14, Me.Column10, Me.Column11, Me.Column12, Me.Column13, Me.cdelete})
-        Me.DataGridView1.Location = New System.Drawing.Point(20, 3)
+        Me.DataGridView1.Location = New System.Drawing.Point(15, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(960, 480)
+        Me.DataGridView1.Size = New System.Drawing.Size(720, 390)
         Me.DataGridView1.TabIndex = 24
-        '
-        'comboBox1
-        '
-        Me.comboBox1.FormattingEnabled = True
-        Me.comboBox1.Location = New System.Drawing.Point(103, 39)
-        Me.comboBox1.Name = "comboBox1"
-        Me.comboBox1.Size = New System.Drawing.Size(97, 24)
-        Me.comboBox1.TabIndex = 28
-        '
-        'label4
-        '
-        Me.label4.AutoSize = True
-        Me.label4.Font = New System.Drawing.Font("Microsoft Tai Le", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label4.ForeColor = System.Drawing.Color.Black
-        Me.label4.Location = New System.Drawing.Point(17, 39)
-        Me.label4.Name = "label4"
-        Me.label4.Size = New System.Drawing.Size(64, 22)
-        Me.label4.TabIndex = 27
-        Me.label4.Text = "Sort by"
-        '
-        'addrsv
-        '
-        Me.addrsv.BackColor = System.Drawing.Color.SeaShell
-        Me.addrsv.ForeColor = System.Drawing.Color.Black
-        Me.addrsv.Image = Global.VBtry.My.Resources.Resources.file
-        Me.addrsv.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.addrsv.Location = New System.Drawing.Point(823, 593)
-        Me.addrsv.Name = "addrsv"
-        Me.addrsv.Size = New System.Drawing.Size(164, 38)
-        Me.addrsv.TabIndex = 26
-        Me.addrsv.Text = "Add Reservation"
-        Me.addrsv.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.addrsv.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.SeaShell
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Image = Global.VBtry.My.Resources.Resources.file
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(817, 23)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(164, 38)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Refresh"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Column1
         '
@@ -143,7 +99,7 @@ Partial Class ReserveNew
         Me.Column1.HeaderText = "Reserve ID"
         Me.Column1.Name = "Column1"
         Me.Column1.ReadOnly = True
-        Me.Column1.Width = 107
+        Me.Column1.Width = 86
         '
         'Column2
         '
@@ -152,7 +108,7 @@ Partial Class ReserveNew
         Me.Column2.HeaderText = "Name"
         Me.Column2.Name = "Column2"
         Me.Column2.ReadOnly = True
-        Me.Column2.Width = 74
+        Me.Column2.Width = 60
         '
         'Column3
         '
@@ -161,7 +117,7 @@ Partial Class ReserveNew
         Me.Column3.HeaderText = "Contact"
         Me.Column3.Name = "Column3"
         Me.Column3.ReadOnly = True
-        Me.Column3.Width = 85
+        Me.Column3.Width = 69
         '
         'Column4
         '
@@ -170,7 +126,7 @@ Partial Class ReserveNew
         Me.Column4.HeaderText = "Address"
         Me.Column4.Name = "Column4"
         Me.Column4.ReadOnly = True
-        Me.Column4.Width = 89
+        Me.Column4.Width = 70
         '
         'Column5
         '
@@ -179,7 +135,7 @@ Partial Class ReserveNew
         Me.Column5.HeaderText = "Category"
         Me.Column5.Name = "Column5"
         Me.Column5.ReadOnly = True
-        Me.Column5.Width = 94
+        Me.Column5.Width = 74
         '
         'Column6
         '
@@ -188,7 +144,7 @@ Partial Class ReserveNew
         Me.Column6.HeaderText = "Item"
         Me.Column6.Name = "Column6"
         Me.Column6.ReadOnly = True
-        Me.Column6.Width = 63
+        Me.Column6.Width = 52
         '
         'Column7
         '
@@ -197,7 +153,7 @@ Partial Class ReserveNew
         Me.Column7.HeaderText = "Unit"
         Me.Column7.Name = "Column7"
         Me.Column7.ReadOnly = True
-        Me.Column7.Width = 62
+        Me.Column7.Width = 51
         '
         'Column8
         '
@@ -206,7 +162,7 @@ Partial Class ReserveNew
         Me.Column8.HeaderText = "Description"
         Me.Column8.Name = "Column8"
         Me.Column8.ReadOnly = True
-        Me.Column8.Width = 108
+        Me.Column8.Width = 85
         '
         'Column9
         '
@@ -215,7 +171,7 @@ Partial Class ReserveNew
         Me.Column9.HeaderText = "Quantity"
         Me.Column9.Name = "Column9"
         Me.Column9.ReadOnly = True
-        Me.Column9.Width = 90
+        Me.Column9.Width = 71
         '
         'Column14
         '
@@ -231,7 +187,7 @@ Partial Class ReserveNew
         Me.Column10.HeaderText = "Status"
         Me.Column10.Name = "Column10"
         Me.Column10.ReadOnly = True
-        Me.Column10.Width = 77
+        Me.Column10.Width = 62
         '
         'Column11
         '
@@ -240,7 +196,7 @@ Partial Class ReserveNew
         Me.Column11.HeaderText = "Mode"
         Me.Column11.Name = "Column11"
         Me.Column11.ReadOnly = True
-        Me.Column11.Width = 72
+        Me.Column11.Width = 59
         '
         'Column12
         '
@@ -249,7 +205,7 @@ Partial Class ReserveNew
         Me.Column12.HeaderText = "Date "
         Me.Column12.Name = "Column12"
         Me.Column12.ReadOnly = True
-        Me.Column12.Width = 71
+        Me.Column12.Width = 58
         '
         'Column13
         '
@@ -258,7 +214,7 @@ Partial Class ReserveNew
         Me.Column13.HeaderText = "Total"
         Me.Column13.Name = "Column13"
         Me.Column13.ReadOnly = True
-        Me.Column13.Width = 69
+        Me.Column13.Width = 56
         '
         'cdelete
         '
@@ -269,15 +225,77 @@ Partial Class ReserveNew
         Me.cdelete.ReadOnly = True
         Me.cdelete.Width = 5
         '
+        'comboBox1
+        '
+        Me.comboBox1.FormattingEnabled = True
+        Me.comboBox1.Items.AddRange(New Object() {"Address", "Category", "Unit", "Status", "Mode", "Date"})
+        Me.comboBox1.Location = New System.Drawing.Point(77, 32)
+        Me.comboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.comboBox1.Name = "comboBox1"
+        Me.comboBox1.Size = New System.Drawing.Size(74, 21)
+        Me.comboBox1.TabIndex = 28
+        '
+        'label4
+        '
+        Me.label4.AutoSize = True
+        Me.label4.Font = New System.Drawing.Font("Microsoft Tai Le", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label4.ForeColor = System.Drawing.Color.Black
+        Me.label4.Location = New System.Drawing.Point(13, 32)
+        Me.label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.label4.Name = "label4"
+        Me.label4.Size = New System.Drawing.Size(52, 18)
+        Me.label4.TabIndex = 27
+        Me.label4.Text = "Sort by"
+        '
+        'addrsv
+        '
+        Me.addrsv.BackColor = System.Drawing.Color.SeaShell
+        Me.addrsv.ForeColor = System.Drawing.Color.Black
+        Me.addrsv.Image = Global.VBtry.My.Resources.Resources.file
+        Me.addrsv.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.addrsv.Location = New System.Drawing.Point(617, 482)
+        Me.addrsv.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.addrsv.Name = "addrsv"
+        Me.addrsv.Size = New System.Drawing.Size(123, 31)
+        Me.addrsv.TabIndex = 26
+        Me.addrsv.Text = "Add Reservation"
+        Me.addrsv.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.addrsv.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.SeaShell
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Image = Global.VBtry.My.Resources.Resources.file
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(613, 19)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(123, 31)
+        Me.Button1.TabIndex = 31
+        Me.Button1.Text = "Refresh"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(166, 31)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(74, 21)
+        Me.ComboBox2.TabIndex = 32
+        '
         'ReserveNew
         '
         Me.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MistyRose
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1013, 643)
+        Me.ClientSize = New System.Drawing.Size(760, 522)
         Me.ControlBox = False
+        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.comboBox1)
@@ -285,6 +303,7 @@ Partial Class ReserveNew
         Me.Controls.Add(Me.addrsv)
         Me.ForeColor = System.Drawing.Color.MistyRose
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "ReserveNew"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel1.ResumeLayout(False)
@@ -316,4 +335,5 @@ Partial Class ReserveNew
     Friend WithEvents Column12 As DataGridViewTextBoxColumn
     Friend WithEvents Column13 As DataGridViewTextBoxColumn
     Friend WithEvents cdelete As DataGridViewImageColumn
+    Private WithEvents ComboBox2 As ComboBox
 End Class

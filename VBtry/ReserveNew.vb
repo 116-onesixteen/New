@@ -3,6 +3,59 @@
 Public Class ReserveNew
 
     Dim _name, _num, _add, _cat, _item, _unit, _desc, _sprice, _q, _stat, _mode, _date, _totalp
+
+    Private Sub comboBox1_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles comboBox1.SelectedIndexChanged
+
+
+        comboBox1.Text = "Value"
+
+        If comboBox1.SelectedIndex = 0 Then
+
+            opencon()
+
+            cmd.Connection = con
+            cmd.CommandText = "SELECT rsvadd FROM tbl_reservenew"
+            cmd.Prepare()
+
+            cmdreader = cmd.ExecuteReader
+
+            While cmdreader.Read
+
+                Try
+
+                    Dim filter_list = read.GetString("rsvadd")
+                    comboBox1.Items.Add(filter_list)
+
+                Catch ex As System.InvalidCastException
+
+                End Try
+
+            End While
+
+            cmdreader.Close()
+            con.Close()
+
+            'ElseIf comboBox1.SelectedIndex = 1 Then
+
+            ' opencon()
+
+            ' cmd.Connection = con
+            'cmd.CommandText = "SELECT categories_name FROM categories"
+            ' cmd.Prepare()
+
+            ' cmdreader = cmd.ExecuteReader
+
+            'While cmdreader.Read
+            'Dim filter_list = cmdreader.GetString("categories_name")
+            ' comboBox1.Items.Add(filter_list)
+            ' End While
+
+            ' cmdreader.Close()
+            ' con.Close()
+        End If
+
+    End Sub
+
     Private cName As String
 
     Private Sub DataGridView1_SelectionChanged(sender As Object, e As EventArgs) Handles DataGridView1.SelectionChanged

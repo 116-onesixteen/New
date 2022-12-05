@@ -3,6 +3,8 @@
 
 Public Class Items_Addnew
 
+    Dim item_id As String
+
     Public Sub Clear()
 
         itmcat.Text = ""
@@ -17,22 +19,48 @@ Public Class Items_Addnew
 
     End Sub
 
+    Private Sub itemssupplier_SelectedIndexChanged(sender As Object, e As EventArgs) Handles combosupplier.SelectedIndexChanged
+
+        opencon()
+
+        cmd.Connection = con
+        cmd.CommandText = "SELECT `suppno` FROM `tbl_supplier` WHERE `supp_name` = '" & combosupplier.Text & "'"
+        cmd.Prepare()
+
+        cmdreader = cmd.ExecuteReader
+
+        While cmdreader.Read
+
+            Try
+
+                item_id = cmdreader.GetValue(0)
+
+            Catch ex As System.InvalidCastException
+
+            End Try
+
+        End While
+
+        cmdreader.Close()
+        con.Close()
+
+    End Sub
+
     Private Sub button3_Click(sender As Object, e As EventArgs) Handles btnsave.Click
 
         Try
 
-            If itmcat.Text = String.Empty Or itmname.Text = String.Empty Or itmdesc.Text = String.Empty Or combosupplier.Text = String.Empty Or itmoprice.Text = String.Empty Or itmsprice.Text = String.Empty Or itmnum.Text = String.Empty Then
+            strconnection_n()
 
-                MessageBox.Show("Warning: Required empty field!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                Return
+            cmd.Connection = str_conn
+            str_conn.Open()
 
-            End If
+            cmd.CommandText = "INSERT INTO `tbl_items`(`item_no`, `item_cat`, `item_name`, `item_desc`, `item_supplier`, `item_oprice`, `item_sprice`, `quantity`) VALUES ('DEFAULT','" & itmcat.Text & "','" & itmname.Text & "','" & itmdesc.Text & "','" & combosupplier.Text & "', '" & itmoprice.Text & "','" & itmsprice.Text & "','" & itmnum.Text & "')"
+            cmd.ExecuteNonQuery()
 
-            create("Insert into tbl_items(item_cat, item_name, item_desc, item_supplier, item_oprice, item_sprice, quantity) values ('" & itmcat.Text & "', '" & itmname.Text & "', '" & itmdesc.Text & "', '" & combosupplier.Text & "', '" & itmoprice.Text & "', '" & itmsprice.Text & "', '" & itmnum.Text & "')")
+            strconn.Close()
 
-            reload("select * FROM tbl_items", Items.DataGridView1)
-
-            Clear()
+            MsgBox("ITEM ADDED", MsgBoxStyle.OkOnly, "Action Confirmation")
 
 
         Catch ex As Exception
@@ -51,6 +79,8 @@ Public Class Items_Addnew
         Clear()
 
     End Sub
+
+
 
     Private Sub chuchu_Click(sender As Object, e As EventArgs)
 
@@ -106,10 +136,7 @@ Public Class Items_Addnew
 
     End Sub
 
-    Private Sub itemssupplier_SelectedIndexChanged(sender As Object, e As EventArgs) Handles combosupplier.SelectedIndexChanged
 
-
-    End Sub
 
     Private Sub groupBox2_Enter(sender As Object, e As EventArgs) Handles groupBox2.Enter
 
